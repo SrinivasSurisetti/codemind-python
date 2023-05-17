@@ -1,9 +1,6 @@
-def revn(n): 
-   if n >= 0: 
-      return int(str(n)[::-1])
-   else:
-      return int('-{val}'.format(val = str(n)[1:][::-1]))
-# take inputs
-num = int(input())
-# calling function and display result
-print(revn(num))
+n=int(input())
+s=0
+while n!=0:
+    s=(s*10)+n%10
+    n//=10
+print(s)
