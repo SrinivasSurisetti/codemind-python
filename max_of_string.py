@@ -1,2 +1,1 @@
-str=input()
-print(max(str))
+print(max(input()))
