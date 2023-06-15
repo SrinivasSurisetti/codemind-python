@@ -1,0 +1,7 @@
+a=int(input('Enter First value:'))
+b=int(input('Enter Second value:'))
+c=int(input('Enter Third value:'))
+sum=a+b+c
+average=(a+b+c)/3
+print("Total=",sum)
+print("average=",average)
