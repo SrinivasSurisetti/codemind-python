@@ -1,0 +1,9 @@
+word=input("Enter any word")
+status=False
+for i in word:
+if i in "aeiouAEIOU":
+status=True
+if status==True:
+print("Word contains vowels")
+else:
+print("Word does'nt contains any vowels")
