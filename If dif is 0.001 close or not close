@@ -1,0 +1,6 @@
+n1=float(input("Enter First Number: "))
+n2=float(input("Enter Second Nuuber: "))
+if abs(n1-n2)<=0.001:
+print("Close")
+else:
+print("Not Close")
