@@ -1,0 +1,8 @@
+def merge(s1,s2):
+s=s1+s2
+s.sort()
+return s
+a=list(map(int,input("Enter sorted list1:").split()))
+b=list(map(int,input("Enter sorted list2:").split()))
+x=merge(a,b)
+print("sorted list after merging:",x) 
