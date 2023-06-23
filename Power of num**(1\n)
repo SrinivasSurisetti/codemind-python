@@ -1,0 +1,5 @@
+def root(x,n=2):
+return (x)**(1/n)
+print(root(25))
+print(root(125,3))
+print(root(64,3))
