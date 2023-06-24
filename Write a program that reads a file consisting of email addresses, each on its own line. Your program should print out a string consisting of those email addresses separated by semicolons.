@@ -1,0 +1,7 @@
+file=open(input("Enter filename:"),'r')
+lines=file.readlines()
+for line in range(len(lines)):if
+line==len(lines)-1:
+print('{}'.format(lines[line].strip()))
+else:
+print('{}'.format(lines[line].strip()),end=";")
