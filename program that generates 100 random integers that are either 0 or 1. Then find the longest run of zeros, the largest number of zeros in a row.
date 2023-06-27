@@ -1,0 +1,11 @@
+import random
+sequence = [random.randint(0, 1) for _ in range(100)]
+max_zeros = 0
+current_zeros = 0
+for num in sequence:
+    if num == 0:
+        current_zeros += 1
+        max_zeros = max(max_zeros, current_zeros)
+    else:
+        current_zeros = 0
+print("Longest run of zeros:", max_zeros)
