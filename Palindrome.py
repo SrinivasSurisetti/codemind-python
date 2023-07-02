@@ -1,10 +1,11 @@
 n=int(input())
-s=0
+b=0
 m=n
-while n!=0:
-    s=(s*10)+n%10
-    n//=10
-if s==m:
+while(n!=0):
+    a=n%10
+    b=b*10+a
+    n=n//10
+if m==b:
     print(True)
 else:
     print(False)
