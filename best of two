@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+    a,b,c,d,e,f=map(int,input().split())
+    A = a+b+c
+    mn1 = min(a,b,c)
+    x = A-mn1
+    B = d+e+f
+    mn2 = min(d,e,f)
+    y = B-mn2
+    if x>y:
+        print("Alice")
+    elif y>x:
+        print("Bob")
+    else:
+        print("tie")
