@@ -1,0 +1,7 @@
+n=float(input("Enter the puchased amt"))
+if n>1000:
+    disc=0.1*n
+    x=n-disc
+    print(x)
+else:
+    print(n)
