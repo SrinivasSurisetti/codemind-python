@@ -1,0 +1,5 @@
+n=int(input())
+if n<=8 and n>=6:
+    print("yes")
+else:
+    print("no")
