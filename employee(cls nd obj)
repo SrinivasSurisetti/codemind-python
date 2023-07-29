@@ -1,0 +1,19 @@
+class Employee:
+    def __init__(self, name, department, salary):
+        self.name = name
+        self.department = department
+        self.salary = salary
+    def read_employee_info(self):
+        self.name = input("Enter employee name: ")
+        self.department = input("Enter employee department: ")
+        self.salary = float(input("Enter employee salary: "))
+    def print_employee_info(self):
+        print("Employee Name:", self.name)
+        print("Department:", self.department)
+        print("Salary:", self.salary)
+emp = Employee("John", "IT", 5000)
+emp.print_employee_info()
+# Update employee info by reading from user input
+emp.read_employee_info()
+# Print updated employee info
+emp.print_employee_info()
