@@ -1,0 +1,16 @@
+class person():
+    def __init__(self,name,aadhar):
+        self.Name=name
+        self.Aadhar=aadhar
+    def display(self):
+        print(self.Name,self.Aadhar)
+class student(person):
+    def __init__(self,Name,Aadhar,roll,branch):
+        self.roll=roll
+        self.branch=branch
+        super().__init__(Name,Aadhar)
+    def display(self):
+        print(self.Name,self.Aadhar,self.roll,self.branch)
+a=student("RA","42fda",143,"rOD")
+a.display()
+    
