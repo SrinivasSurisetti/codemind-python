@@ -1,0 +1,14 @@
+name='srinivas'
+age=18.289
+height=178.6534
+print(f"My name is {name}")
+print(f"I am {age:.3f} years old")
+print(f"I am {height:.2f} cms tall")
+print(f"My name is {name:>10}")
+print(f"My name is {name:<10}")
+print(f"My name is {name:^14}")
+print(f"My age is {age:f}")
+print(f"My age is {age:+}")
+print(f"My age is {age:-}")
+print(f"My age is {age: }")
+print(f"My age is {age:03}")
