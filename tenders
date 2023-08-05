@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    x=max(a,c,b)
+    if x==a:
+        print("ALICE")
+    elif(x==b):
+        print("BOB")
+    else:
+        print("CHARLIE")
