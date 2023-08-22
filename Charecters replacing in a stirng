@@ -1,0 +1,16 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    s=str(input())
+    ls=list(s)
+    lx=[]
+    for j in range(0,n):
+        if ls[j]=="T":
+            lx.append("A")
+        if ls[j]=="G":
+            lx.append("C")
+        if ls[j]=="A":
+            lx.append("T")
+        if ls[j]=="C":
+            lx.append("G")
+    print("".join(lx))
