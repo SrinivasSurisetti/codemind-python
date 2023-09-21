@@ -1,0 +1,20 @@
+# cook your dish here
+n=int(input())
+for i in range(n):
+    L,v1,v2=map(int,input().split())
+    t=L/v1
+    h=L/v2
+    T=int(L/v1)
+    H=int(L/v2)
+    if t==T:
+        tt=t
+    else:
+        tt=T+1
+    if h==H:
+        ht=h
+    else:
+        ht=H+1
+    if ht>=tt:
+        print(-1)
+    else:
+        print(int((tt-ht)-1))
