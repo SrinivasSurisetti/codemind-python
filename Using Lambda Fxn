@@ -1,0 +1,5 @@
+# cook your dish
+t=int(input())
+for i in range(t):
+    x=lambda n : "NO" if int(n)>=7 else "YES"
+    print(x(input()))
