@@ -1,0 +1,11 @@
+# cook your dish here
+n=int(input())
+for i in range(n):
+    t=int(input())
+    x=t*0.2
+    y=100//x
+    z=int(y*x)
+    if z>=100:
+        print(int(y))
+    else:
+        print(int(y+1))
