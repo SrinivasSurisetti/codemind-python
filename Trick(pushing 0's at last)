@@ -1,0 +1,12 @@
+class Solution:
+	def pushZerosToEnd(self,arr, n):
+    	# code here
+    	arr1=[]
+    	arr2=[]
+        for i in range(0,n):
+            if arr[i]==0:
+                arr1.append(arr[i])
+            else:
+                arr2.append(arr[i])
+        res = arr2+arr1
+        arr[:] = res[:]   //Trick to store elements in a loop without using for loop 
