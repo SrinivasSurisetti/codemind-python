@@ -1,0 +1,11 @@
+def fact(n):
+    f=1
+    while(n):
+        f*=n
+        n-=1
+    return f
+t=int(input())
+for i in range(t):
+    N=int(input())
+    diff=N-2
+    print(int(fact(N)//fact(diff)))
