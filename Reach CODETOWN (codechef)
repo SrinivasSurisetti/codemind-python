@@ -1,0 +1,14 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    s=input()
+    res=""
+    for j in range(0,8):
+        if s[j]=="A" or s[j]=="E" or s[j]=="I" or s[j]=="O" or s[j]=="U":
+            res+="V"
+        else:
+            res+="C"
+    if res=="CVCVCVCC":
+        print("YES")
+    else:
+        print("NO")
