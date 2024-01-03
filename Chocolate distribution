@@ -1,0 +1,8 @@
+# cook your dish here
+n=int(input())
+for i in range(n):
+    N=int(input())
+    if N%2==0:
+        print(N//2,N)
+    else:
+        print(N//2+1,N)
