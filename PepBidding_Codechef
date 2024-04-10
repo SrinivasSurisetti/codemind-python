@@ -1,0 +1,15 @@
+# cook your dish here
+t = int(input())
+for i in range(0,t):
+    n = int(input())
+    attA = sum(list(map(int,input().split())))
+    defA = sum(list(map(int,input().split())))
+    attP = sum(list(map(int,input().split())))
+    defP = sum(list(map(int,input().split())))
+    if(attP > attA and defP > defA):
+        print("P")
+    elif(attA > attP and defA > defP):
+        print("A")
+    else:
+        print("DRAW")
+        
