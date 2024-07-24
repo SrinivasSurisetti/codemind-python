@@ -1,0 +1,10 @@
+# cook your dish here
+import math
+t  = int(input())
+for i in range(t):
+    x,y,z = map(int,input().split());
+    total = x*y
+    if(z>total):
+        print(0)
+    else:
+        print(math.ceil((total - z)/y))
