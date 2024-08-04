@@ -1,0 +1,5 @@
+array1 = [1, 2]
+array2 = [1, 2, 3]
+
+is_subset = all(elem in array2 for elem in array1)
+print(is_subset)  # Output: True
