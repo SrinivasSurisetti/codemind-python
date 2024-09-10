@@ -1,0 +1,17 @@
+QuickSort(arr, low, high)
+    if low < high then
+        pivotIndex = Partition(arr, low, high)
+        QuickSort(arr, low, pivotIndex - 1)   // Recursively sort the left subarray
+        QuickSort(arr, pivotIndex + 1, high)  // Recursively sort the right subarray
+
+Partition(arr, low, high)
+    pivot = arr[high]   // Choose the last element as the pivot
+    i = low - 1         // Index of the smaller element
+
+    for j = low to high - 1 do
+        if arr[j] < pivot then
+            i = i + 1
+            Swap arr[i] with arr[j]
+
+    Swap arr[i + 1] with arr[high]  // Move pivot to correct position
+    return i + 1   // Return the index of the pivot
